@@ -7,7 +7,10 @@
 }
 
 body {
+  position: relative;
   background-color: #9dcaff;
+  height: 1080px;
+  overflow: hidden;
 }
 
 .header {
@@ -87,7 +90,7 @@ body {
 
 .btnPos:hover {
   transform: rotate(-10deg);
-  transition: all 1s ease;
+  transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .btnPos:hover + .ellipse {
@@ -118,12 +121,10 @@ body {
 }
 
 .reset {
-  width: 145;
-  height: 63;
-  font-family: Shrikhand;
+  font-family: Seymour One;
   font-weight: bolder;
   font-style: Italic;
-  font-size: 32px;
+  font-size: 40px;
   line-height: 100%;
   letter-spacing: 0%;
   background-color: white;
@@ -132,6 +133,46 @@ body {
 }
 
 .reset:hover {
-  transform: scale(1.1);
+  background-color: #c2c2c2;
   transition: all 1s ease;
+  cursor: pointer;
+}
+
+.Joint1 {
+  position: absolute;
+  border: 1px solid red;
+  width: 500px;
+  height: 1000px;
+  transform: rotate(50deg);
+  left: -100px;
+  top: 250px;
+}
+
+.Joint2 {
+  position: absolute;
+  border: 1px solid red;
+  width: 500px;
+  height: 1000px;
+  transform: rotate(-50deg);
+  -webkit-transform: scaleX(-1);
+  left: 100px;
+  top: 250px;
+  border: 1px solid red;
+}
+
+.ai-hands {
+  display: none;
+  position: absolute;
+  width: 67.99999824278525px;
+  height: 67.99999824278525px;
+  border: 1px solid blue;
+  opacity: 1;
+  top: -441.88px;
+  left: 638.37px;
+}
+
+.human-hands {
+  display: none;
+  top: -200px;
+  position: absolute;
 }
