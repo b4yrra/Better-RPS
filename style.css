@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Seymour+One&display= swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #9dcaff;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  height: 30vh;
+}
+
+.score {
+  width: 163;
+  height: 201;
+  -webkit-text-stroke: 2px black;
+  font-family: "Seymour One", sans-serif;
+  font-weight: 400;
+  font-style: Book;
+  font-size: 160px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: white;
+  text-shadow: 4px 4px #000000;
+}
+
+.text {
+  width: 155;
+  height: 60;
+  -webkit-text-stroke: 2px black;
+  font-family: Seymour One;
+  font-weight: 400;
+  font-style: Book;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: -10%;
+  text-align: center;
+  color: white;
+  text-shadow: 4px 4px black;
+}
+
+.buttonSection {
+  display: flex;
+  justify-content: center;
+  padding-top: 400px;
+  gap: 80px;
+}
+
+.btn {
+  position: relative;
+  width: 222px;
+  height: 222px;
+  border-radius: 500px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btnPos {
+  position: absolute;
+  width: 196px;
+  height: 209.867919921875px;
+  top: -25px;
+  left: 14px;
+}
+
+.ellipse {
+  position: absolute;
+  width: 178px;
+  height: 178px;
+  top: 22px;
+  left: 22px;
+  background-color: white;
+  z-index: -1;
+  border-radius: 500px;
+  box-shadow: 4px 4px 0px 0px #000000, 4px -7px 0px 0px #c2c2c2 inset;
+}
+
+.btnPos:hover {
+  transform: rotate(-10deg);
+  transition: all 1s ease;
+}
+
+.btnPos:hover + .ellipse {
+  background-color: grey;
+}
+
+.footer {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 400px;
+  gap: 60px;
+}
+
+.resultText {
+  width: 824;
+  height: 121;
+  -webkit-text-stroke: 2px black;
+  color: white;
+  font-family: Seymour One;
+  font-weight: 400;
+  font-style: Book;
+  font-size: 96px;
+  line-height: 100%;
+  letter-spacing: -10%;
+  text-align: center;
+  text-shadow: 4px 4px #000000;
+}
+
+.reset {
+  width: 145;
+  height: 63;
+  font-family: Shrikhand;
+  font-weight: bolder;
+  font-style: Italic;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  background-color: white;
+  padding: 10px 10px;
+  box-shadow: 4px 4px 0px 0px #000000, 4px -7px 0px 0px #c2c2c2 inset;
+}
+
+.reset:hover {
+  transform: scale(1.1);
+  transition: all 1s ease;
+}

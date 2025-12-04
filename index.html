@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock-Paper-Scisscors</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div>
+        <div class="score" id="bot">0</div>
+        <div class="text">AI</div>
+      </div>
+      <div>
+        <div class="score" id="player">0</div>
+        <div class="text">YOU</div>
+      </div>
+    </div>
+
+    <div class="buttonSection" id="buttonSections">
+      <button class="btn" id="rock" onclick="turn('rock')">
+        <img class="rockBtn btnPos" src="./button/rock-human.png" alt="Rock" />
+        <div class="ellipse"></div>
+      </button>
+      <button class="btn" id="paper" onclick="turn('paper')">
+        <img
+          class="paperBtn btnPos"
+          src="./button/paper-human.png"
+          alt="Paper"
+        />
+        <div class="ellipse"></div>
+      </button>
+      <button class="btn" id="scissors" onclick="turn('scissors')">
+        <img
+          class="scissorBtn btnPos"
+          src="./button/scissors-human.png"
+          alt="Scisscors"
+        />
+        <div class="ellipse"></div>
+      </button>
+    </div>
+
+    <div class="footer" id="footer">
+      <div class="resultText" id="resultText"></div>
+      <button class="reset" id="reset">Restart</button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
