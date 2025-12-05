@@ -212,7 +212,7 @@ body {
 }
 
 .arm-human {
-  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 .ai-hands {
